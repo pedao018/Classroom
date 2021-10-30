@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Classroom</string>
+    <string name="dialog_create_title_class">Create Classroom</string>
+    <string name="dialog_create_class_name">What is the name of your classroom?</string>
+    <string name="dialog_create_create_classroom">Create Classroom</string>
+
+    <string name="dialog_create_title_student">Add Student</string>
+    <string name="dialog_create_student_name">What is the name of your student?</string>
+    <string name="dialog_create_add_student">Add Student</string>
 </resources>

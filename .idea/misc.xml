@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/drawable/ic_launcher_background.xml" value="0.37083333333333335" />
         <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/activity_main.xml" value="0.340625" />
-        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/classroom_item_view_holder.xml" value="0.1" />
-        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/main_activity.xml" value="0.1" />
+        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/classroom_item_view_holder.xml" value="0.25" />
+        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/dialog_create.xml" value="0.25" />
+        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/main_activity.xml" value="0.22" />
         <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/main_fragment.xml" value="0.1" />
+        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/student_activity.xml" value="0.1" />
+        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/student_fragment.xml" value="0.22" />
+        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/layout/student_item_view_holder.xml" value="0.25" />
+        <entry key="..\:/Tu hoc/Lap trinh di dong/Kotlin/Kotlin_Android/zluyentap/Classroom/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.37083333333333335" />
       </map>
     </option>
   </component>
