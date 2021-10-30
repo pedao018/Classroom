@@ -22,7 +22,8 @@ import com.raywenderlich.student.StudentActivity
 class MainFragment : Fragment() {
     private lateinit var binding: MainFragmentBinding
     private lateinit var viewModel: MainViewModel
-    private lateinit var startActivity_ForResult: ActivityResultLauncher<Intent>
+
+    lateinit var onClassroomClick: ((classRoom: Classroom) -> Unit)
 
     companion object {
         const val MAIN_FRAGMENT_TAG = "MAIN_FRAGMENT_TAG"
@@ -51,39 +52,16 @@ class MainFragment : Fragment() {
         binding.mainFragmentListsRecyclerview.layoutManager = LinearLayoutManager(requireContext())
         val recyclerViewAdapter = ClassroomRecyclerViewAdapter(viewModel.classRoomList,
             onItemClick = { classRoom ->
-                //openStudentActivity(classRoom)
-                openStudentActivity_WithResult(classRoom)
+                onClassroomClick.invoke(classRoom)
             })
         binding.mainFragmentListsRecyclerview.adapter = recyclerViewAdapter
         viewModel.onClassroomAdded = {
             recyclerViewAdapter.listUpdated()
         }
-
-        startActivity_ForResult =
-            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result: ActivityResult ->
-                if (result.resultCode == Activity.RESULT_OK) {
-                    val intent = result.data
-                    // Handle the Intent
-                    intent?.let {
-                        viewModel.refresh_Classroom()
-                    }
-                }
-            }
         viewModel.onClassroomListRefresh = {
             recyclerViewAdapter.notifyDataSetChanged()
         }
     }
 
-    private fun openStudentActivity(classRoom: Classroom) {
-        val intent = Intent(requireActivity(), StudentActivity::class.java).apply {
-            putExtra(MainActivity.CLASSROOM_INTENT_KEY, classRoom)
-        }
-        startActivity(intent)
-    }
 
-    private fun openStudentActivity_WithResult(classRoom: Classroom) {
-        val intent = Intent(requireActivity(), StudentActivity::class.java)
-        intent.putExtra(MainActivity.CLASSROOM_INTENT_KEY, classRoom)
-        startActivity_ForResult.launch(intent)
-    }
 }
